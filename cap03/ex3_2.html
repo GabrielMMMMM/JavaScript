@@ -1,0 +1,10 @@
+<script>
+    const total = Number(prompt("Quanto de ração tem no total (em Quilos): "))
+    const consumo = Number(prompt("Quanto é consumido por dia (em gramas): "))
+
+    const converter = total * 1000
+    const duracao =  Math.floor(converter / consumo)
+    const sobra =  converter%consumo
+
+    alert(`Duração: ${duracao} dias.\nSobra: ${sobra} gramas.`)
+</script>
