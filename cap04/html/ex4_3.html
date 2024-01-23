@@ -1,0 +1,18 @@
+<script>
+  const bairro = prompt("Qual é o seu bairro");
+  let frete;
+  switch (bairro) {
+    case "Centro":
+      frete = 5.0;
+      break;
+    case "Grajáu":
+      frete = 1000;
+      break;
+    case "Santo Amaro":
+      frete = 20;
+    default:
+        frete = "grátis"
+      break;
+  }
+    alert (`Taxa R$: ${frete}`)
+</script>

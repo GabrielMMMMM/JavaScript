@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Execicio</title>
+    <style>
+      img {
+        float: left;
+        height: 300px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+    src=https://images.tcdn.com.br/img/img_prod/228256/balanca_eletronica_de_precisao_2kg_x_0_5g_com_coluna_inox_1559_1_4ded7d502757504a03f0f9adf10383fd.jpg
+    alt="balanca" />
+
+    <h1>Programa Cálculo do Peso Ideal</h1>
+    <form>
+      <p>
+        Nome:
+        <input type="text" id="inNome" required />
+      </p>
+      <p>
+        Sexo:
+        <input type="radio" name="sexo" id="inMasculino" required /> Masculino
+        <input type="radio" name="sexo" id="inFeminino" required /> Feminino
+      </p>
+      <p>
+        Altura:
+        <input type="number" id="inAltura" min="0" step="0.01" required />
+      </p>
+      <input type="submit" value="Calcular Peso Ideal" />
+      <input type="reset" value="Limpar Campos" />
+    </form>
+    <h3></h3>
+    <script src="../js/ex4_2.js"></script>
+  </body>
+</html>
