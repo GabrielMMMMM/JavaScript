@@ -1,0 +1,12 @@
+<script>
+  const valor = Number(prompt("Valor da compra: "));
+  const parcelas = Number(prompt("Número de Parcelas: "));
+
+  const valorParcela = Math.floor(valor / parcelas);
+  const valorUltima = valorParcela + (valor % parcelas);
+
+  for (let i = 1; i < parcelas; i++) {
+    console.log(`Valor da ${i}° Parcela: ${valorParcela}`);
+  }
+  console.log(`Valor da última Parcela: ${valorUltima.toFixed(2)}`);
+</script>
