@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício</title>
+    <style>
+        .oculta{
+            display:none;
+        }
+        .exibe{
+            display: inline-block   ;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>Jogo Descubra um Número</h1>
+    <form>
+      <p>
+        Número:
+        <input
+          type="number"
+          min="1"
+          max="100"
+          id="inNumero"
+          required
+          autofocus
+        />
+        <input type="submit" value="Apostar" id="btSubmit" />
+        <input type="button" value="Jogar Novamente" id="btNovo" class="oculta">
+      </p>
+    </form>
+    <h3>Erros: <span class="outResp1"></span></h3>
+    <h3>Chances: <span class="outResp2"></span></h3>
+    <h3 id="outDica">Dica: o número está entre 1 e 100</h3>
+
+    <script src="../js/ex6_2.js"></script>
+  </body>
+</html>
