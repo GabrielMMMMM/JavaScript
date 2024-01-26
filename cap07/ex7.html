@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <h1>Programa Caixa de Loja</h1> <hr>
+    <form>
+        <p>
+            Data de Vencimento:
+            <input type="date" id="inVencimento" required autofocus>
+        </p>
+        <p>
+            Valor da Conta:
+            <input type="number" id="inValor" required min = 1 step="0.01">
+            <input type="submit" value="Calcular Multa e Juros">
+        </p>
+        <p>
+            Valor da Multa R$:
+            <input type="number" id="outMulta" readonly>
+        </p>
+        <p>
+            Valor do Juros R$:
+            <input type="number" id="outJuros" readonly>
+        </p>
+        <p>
+            Valor Total:
+            <input type="number"  id="outTotal" readonly>
+            <input type="reset" value="Nova Conta">
+        </p>
+    </form>
+    <script src="js/ex7.js"></script>
+</body>
+</html>

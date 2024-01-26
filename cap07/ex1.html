@@ -1,0 +1,12 @@
+<script>
+    const anuncio = prompt("Faça seu anuncio: ")
+    let palavras = 1
+    
+    for (const i of anuncio){
+        if (i == " "){
+            palavras += 1
+        }
+    }
+
+    alert (`O anuncio: "${anuncio}". Tem ${palavras} palavras.`)
+</script>
