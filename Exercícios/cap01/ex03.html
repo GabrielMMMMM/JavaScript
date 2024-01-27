@@ -1,0 +1,10 @@
+<script>
+  const produto = Number(prompt("Digite o valor do produto: "));
+  const aVista = produto - produto * 0.1;
+  const parcelado = produto / 3;
+  alert(
+    `Pague à vista por apenas: R$${aVista.toFixed(
+      2
+    )}\nOU parcelado por 3 vezes de ${parcelado.toFixed(2)} reais.`
+  );
+</script>
