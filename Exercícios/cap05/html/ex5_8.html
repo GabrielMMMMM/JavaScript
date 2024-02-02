@@ -1,0 +1,17 @@
+<script>
+  alert("Digite um ano para saber se teve copa do mundo nele");
+  alert("Caso queira sair digite 0");
+  do {
+    const ano = Number(prompt("Digite um ano:"));
+    if (ano == 0 || isNaN(ano)) {
+      break;
+    } else if ((ano - 1930) % 4 == 0) {
+      alert(`${ano} foi ano de copa do mundo!!!`);
+    } else if (ano == 1942 || ano == 1946) {
+      alert(`${ano} não teve copa do mundo devido a segunda guerra mundial!`);
+    } else {
+      alert(`Em ${ano} não teve copa do mundo, tente novamente. `);
+    }
+  } while (true);
+  alert("Fim");
+</script>

@@ -1,0 +1,11 @@
+<script>
+    const produto = prompt("Digite o nome do produto: ")
+    const etiqueta = Number(prompt("Quantas etiquetas?"))
+    let resposta =""
+    let contador = 0
+    while(contador < etiqueta){
+        resposta += `${produto}` + `\n`
+        contador ++
+    }
+    alert(resposta)
+</script>
