@@ -1,0 +1,11 @@
+<script>
+  function mostraHora() {
+    const data = new Date();
+    const hora = data.getHours();
+    const minutos = data.getMinutes();
+    const segundos = data.getSeconds();
+    const m2 = minutos < 10 ? "0" + minutos : minutos;
+    console.log("Atenção: " + hora + ":" + m2 + ":" + segundos);
+  }
+  setInterval(mostraHora, 1000);
+</script>

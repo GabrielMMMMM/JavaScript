@@ -1,0 +1,19 @@
+<script>
+  function calculaMedia (...notas)  {
+    if (notas.length == 0) {
+      console.log("Não tem notas");
+      return
+    }
+    let soma = 0;
+    for (nota of notas) {
+      soma += nota;
+    }
+    const media = soma / notas.length;
+    const aprovado = media > 5 ? "sim" : "nao";
+    return aprovado;
+  };
+  console.log(calculaMedia())
+  console.log(calculaMedia(5, 5, 5, 1))
+  console.log(calculaMedia(7, 8, 8, 10))
+
+</script>
